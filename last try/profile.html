@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"   type="logo"   href="login_img/gengeng.png">
+    <link rel="stylesheet" href="grid.css"/>
+    <link rel="stylesheet" href="profile.css"/>
+    <link rel="stylesheet" href="app.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>GengGeng</title>
+</head>
+<body> 
+
+<div class="nav-wrapper">
+    <div class="container">
+        <div class="nav">
+            <a href="index.html" class="logo">
+                <i class='bx bx-movie-play bx-tada main-color'></i>Ge<span class="main-color">ng</span>Geng
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Movies</a></li>
+                <li><a href="index.html">Series</a></li>
+                <li><a href="index.html">Cartoons</a></li>
+                <li><a href="index.html">About</a></li>                
+            </ul>
+            
+            <div class="hamburger-menu" id="hamburger-menu">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="profileuser-container"> 
+    <div class="recent">Profile</div>  
+    <div class="profile-wrapper">
+        <div class="profile-user">
+            <div class="user-content">
+                <div class="user">
+                    <img id="userimg" class="userimg" src="login_img/gengeng.png" alt="">
+                    <span id="name"class="user-username"></span>
+                </div>
+                <div class="userinfo">
+                    <div class="inputwrapper">
+                    <span class="userlabels">Email:
+                        <span class="ucontent" id="email"></span>
+                    </span>     
+                    </div>
+                    <div class="inputwrapper">
+                        <span class="userlabels" >Number: 
+                            <span class="ucontent" id="number"></span>
+                        </span>
+                    </div>
+                    <div class="inputwrapper">  
+                        <span class="userlabels password" >Password:
+                            <div class="pass">
+                                <span class="ucontent">********</span>
+                                <button><a class="" id="changepass">Change Password</a></button>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="inputwrapper">
+                        <span class="userlabels" >Subscription: 
+                            <span class="ucontent" id="subscription">Premium</span>
+                        </span>
+                    </div>
+                    <div class="inputwrapper lbas">
+                    <button><a class="out" id="Button_signout">Sign Out</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+
+
+
+<div class="recent-wrap">
+    <div class="recent">Recent Views</div>  
+    <div class="owl-carousel" id="recent">
+            <a href="">
+                <div class="item-recent">
+                    <img src="./images/series/star-trek.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Star Trek
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </a><a href="">
+                <div class="item-recent">
+                    <img src="./images/series/stranger-thing.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Stranger Things
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="item-recent">
+                    <img src="./images/cartoons/demon-slayer.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Demon Slayer
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="item-recent">
+                    <img src="./images/cartoons/over-the-moon.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Over The Moon
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="item-recent">
+                    <img src="./images/movies/theatre-dead.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Theatre of the dead
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="item-recent">
+                    <img src="./images/movies/transformer.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Transformer
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+    </div>
+</div>
+
+<footer id="e"class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 col-md-6 col-sm-12">
+                <div class="content">
+                    <a  href="#" class="logo">
+                        <i class='bx bx-movie-play bx-tada main-color'></i>Ge<span class="main-color">ng</span>Geng
+                    </a>
+                    <p>
+                        We've upgraded your streaming experience with a sleek new interface, better content, and personalized recommendations. Download our mobile app, connect with fellow enthusiasts, and stay tuned for more updates. Happy streaming!
+                    </p>
+                    <div class="social-list">
+                        <a href="#" class="social-item">
+                            <i class="bx bxl-facebook"></i>
+                        </a>
+                        <a href="#" class="social-item">
+                            <i class="bx bxl-twitter"></i>
+                        </a>
+                        <a href="#" class="social-item">
+                            <i class="bx bxl-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-md-6 col-sm-12">
+                <div class="row">
+                    <div class="col-3 col-md-6 col-sm-6">
+                        <div class="content">
+                            <p><b>GengGeng</b></p>
+                            <ul class="footer-menu">
+                                <li><a href="team.html">Our Team</a></li>                                   
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-6 col-sm-6">
+                        <div class="content">
+                            <p><b>Browse</b></p>
+                            <ul class="footer-menu">
+                                <li><a href="#a">Movies</a></li>
+                                <li><a href="#b">Series</a></li>
+                                <li><a href="#c">Anime</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-6 col-sm-6">
+                        <div class="content">
+                            <p><b>Help</b></p>
+                            <ul class="footer-menu">
+                                <li><a href="#">Term of Use</a></li>
+                                <li><a href="#">Media Center</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Contacts Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-6 col-sm-6">
+                        <div class="content">
+                            <p><b>Download app</b></p>
+                            <ul class="footer-menu">
+                                <li>
+                                    <a href="https://play.google.com/">
+                                        <img src="/last try/images/google-play.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.apple.com/ph/app-store/">
+                                        <img src="/last try/images/app-store.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="copyright">
+    Copyright 2023 <a href="#" target="_blank">
+        all Rights Reserve</a>
+</div>
+
+   
+<!---script Hambuger-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!---script Owl carousel-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!---script Hambuger and Carousel-->
+<script src="/last try/app.js"></script>
+<!---Database script-->
+<script type="module" src="P_database.js"></script>
+<!---owlCarousel-->
+<script type="text/javascript">
+    $('#recent').owlCarousel({
+        loop:false,
+        nav:false,
+        dots:false,
+        rlt:true,
+        margin:10,
+        responsive:{
+            300: {
+                items: 2
+            },
+            500: {
+                items: 3
+            },
+            1280: {
+                items: 4
+            },
+            1600: {
+                items: 5
+            }
+    }   
+    })
+</script>
+</body>
+
+
+<!--- Profile Reserve Database
+
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+    import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
+    import { getDatabase, ref, onValue, update } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyAWaSrYQPNLprAYy1fhYaJq3Sj1f5UOgSM",
+        authDomain: "finalproj-b9ade.firebaseapp.com",
+        databaseURL: "https://finalproj-b9ade-default-rtdb.firebaseio.com",
+        projectId: "finalproj-b9ade",
+        storageBucket: "finalproj-b9ade.appspot.com",
+        messagingSenderId: "95102138737",
+        appId: "1:95102138737:web:f297e49a4c2291ed41ded0"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+    const auth = getAuth(app);
+
+    // Element references
+    const userEmailElement = document.getElementById("Email");
+    const userSubscriptionElement = document.getElementById("subscription");
+    const userLanguageElement = document.getElementById("lang");
+    const userRatingsElement = document.getElementById("phoneNumber");
+    const userNameElement = document.getElementById("name");
+
+    // Listen for changes in authentication state
+onAuthStateChanged(auth, (user) => {
+    if (user) {
+        // User is signed in
+        const userId = user.uid;
+        const userRef = ref(db, `users/${userId}`);
+
+        // Fetch user data from the database
+        onValue(userRef, (snapshot) => {
+            const userData = snapshot.val();
+            if (userData) {
+                // Update HTML elements with user data
+                document.getElementById("name").textContent = userData.name || "Username";
+                document.getElementById("email").textContent = userData.email || "Email";
+                document.getElementById("number").textContent = userData.nohp || "Phone Number";
+            }
+        });
+    } else {
+        // No user signed in
+        // You can handle this case if needed
+    }
+});
+
+// Listen for clicks on the "Change Password" button
+document.getElementById("changepass").addEventListener("click", () => {
+    const user = auth.currentUser;
+    if (user) {
+        const providerId = user.providerData[0].providerId;
+        if (providerId === "password") {
+            const newPassword = prompt("Enter your new password:");
+            if (newPassword !== null && newPassword !== "") {
+                user.updatePassword(newPassword)
+                    .then(() => {
+                        alert("Password changed successfully!");
+                    })
+                    .catch((error) => {
+                        console.error("Error changing password:", error);
+                        alert("Error changing password. Please try again.");
+                    });
+            } else {
+                alert("Password change canceled or invalid password!");
+            }
+        } else {
+            alert("You are not authenticated with a password. Please use the provider's interface to manage your credentials.");
+        }
+    } else {
+        alert("No user signed in. Please sign in again.");
+    }
+});
+
+    // Listen for clicks on the sign-out button
+    document.getElementById("Button_signout").addEventListener("click", () => {
+        signOut(auth)
+            .then(() => {
+                // Sign-out successful.
+                alert("Logged out successfully!");
+                window.location.href = "http://127.0.0.1:5500/login.html"; // Redirect to login page
+            })
+            .catch((error) => {
+                // error happened.
+                console.error("Error signing out:", error);
+            });
+    });
+
+    
+</script>
+-->
+</html>
